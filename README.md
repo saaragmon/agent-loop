@@ -23,23 +23,23 @@ This is the Week 5 capstone from [Ed Donner’s Agents course](https://github.co
 flowchart TB
   you[You: language + team]
   orch[ADK orchestrator]
-  style[author_style]
-  build[launch_worker x N]
-  wait[wait_for_team]
-  qa[QA agent + Playwright MCP]
-  fix[relaunch_worker once]
+  look[author_style]
+  builders[launch_worker x N]
+  waitTeam[wait_for_team]
+  qa[QA agent plus Playwright MCP]
+  repair[relaunch_worker once]
   hub[build_hub]
-  site[site/index.html]
+  arcade[site index.html]
 
   you --> orch
-  orch --> style
-  orch --> build
-  build --> wait
-  wait --> qa
-  qa -->|BROKEN| fix
-  fix --> wait
+  orch --> look
+  orch --> builders
+  builders --> waitTeam
+  waitTeam --> qa
+  qa -->|BROKEN| repair
+  repair --> waitTeam
   qa -->|WORKS| hub
-  hub --> site
+  hub --> arcade
 ```
 
 **Layers**
