@@ -2,8 +2,6 @@
 
 A Google ADK **orchestrator** hands five framework workers a shared goal: build a small language-learning arcade. They write games in parallel onto one site. Then a **QA agent** opens each game in a real Chrome window (Playwright MCP), clicks through it, and reports WORKS or BROKEN. Broken games get **one** bounded fix round. Open `site/index.html` to play.
 
-This is the Week 5 capstone from [Ed Donner’s Agents course](https://github.com/ed-donner/agents), packaged as a standalone repo. The loop that matters for product/QA work: **requirement → build → E2E check in a browser → fail with a symptom → one repair**.
-
 **Not a language-learning product.** The arcade is the sandbox. The skill is judging agent-built work the way you would judge an “AI Employee” that just finished a task.
 
 ## What I tried to learn
